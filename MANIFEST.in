@@ -1,0 +1,14 @@
+include *.txt
+include *.rst
+include LICENSE
+recursive-include sphinx_minoo_theme *.conf
+recursive-include sphinx_minoo_theme *.html
+recursive-include sphinx_minoo_theme *.css
+recursive-include sphinx_minoo_theme *.js
+recursive-include sphinx_minoo_theme *.ttf
+recursive-include sphinx_minoo_theme *.eot
+recursive-include sphinx_minoo_theme *.svg
+recursive-include sphinx_minoo_theme *.woff
+recursive-include sphinx_minoo_theme *.woff2
+recursive-include sphinx_minoo_theme *.jpg
+exclude demo
