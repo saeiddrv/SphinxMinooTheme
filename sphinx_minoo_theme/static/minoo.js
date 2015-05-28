@@ -1,20 +1,10 @@
 
 $( document ).ready(function() {
 
-    var navToggle = false;
-
     $("#navigation-toggle").click(function(e) {
         e.preventDefault();
         $("#page").toggleClass("toggled");
         $("#sidebar-toggle-icon").toggleClass("fa-angle-double-left fa-angle-double-right");
-        if(navToggle){
-            $("#page-sidebar").removeClass("notransition");
-        }else{
-            setTimeout(function(){
-                $("#page-sidebar").addClass("notransition");
-            }, 500); 
-        }
-        navToggle = ! navToggle;
         if($("#other-versions").hasClass("toggled")){
             $("#other-versions").toggleClass("toggled");
             $("#current-version i").toggleClass("fa-caret-up fa-caret-down");
@@ -22,8 +12,8 @@ $( document ).ready(function() {
     });
 
     var sth = $("#sidebar-top").height();
-    $("#sidebar-bottom").css("margin-top", sth + "px");
-    $("#sidebar-bottom").height($(window).height() - sth);
+    $("#sidebar-bottom").css("top", (sth - 3) + "px");
+    $("#sidebar-bottom").height($(window).height() - (sth) + 3);
 
     $("div[class^='highlight-']").wrap( "<div class='h-scroll'></div>");
     $("div[class^='first highlight-']").wrap( "<div class='h-scroll'></div>");
@@ -78,6 +68,23 @@ $( document ).ready(function() {
         $("#" + id).find("ul").toggle();
     });
 
+    //index menu list
+
+    $(".toctree-wrapper li.toctree-l1").each(function(i) {
+        $(this).attr("id", "wrapper-toctree-l1-" + i);
+        if($(this).find("ul").length){
+            $(this).find("ul").hide();
+            $("#wrapper-toctree-l1-" + i).prepend("<i class='fa fa-plus-square-o'></i>");
+        }
+    }); 
+
+    $("li[id^='wrapper-toctree-l1-'] i").click(function(e) {
+        e.preventDefault();
+        var id = $(this).parents().attr("id");
+        $(this).toggleClass("fa-plus-square-o fa-minus-square-o");
+        $("#" + id).find("ul").toggle();
+    });
+
 
     // "Read the Docs" badge
 
@@ -86,6 +93,9 @@ $( document ).ready(function() {
         $("#other-versions").toggleClass("toggled");
         $("#current-version i").toggleClass("fa-caret-up fa-caret-down");
     });
+
+
+    $("span.emoji-size:contains('✔')").parent().addClass("plevel");
 
 });
 

@@ -6,8 +6,6 @@
 Welcome to Sphinx Minoo Theme's demo!
 ======================================
 
-.. rubric:: Minoo (Beta 0.9.1)
-
 Contents:
 
 .. toctree::
