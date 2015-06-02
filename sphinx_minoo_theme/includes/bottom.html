@@ -1,7 +1,5 @@
 {% import "glossary.html" as glossary %}
 
-<div class="row-fluid">
-    <div class="col-lg-12">
         {% if next or prev %}
             <div id="body-btn">
                 {% if theme_direction == "ltr" %}
@@ -21,10 +19,8 @@
                 {% endif %}
             </div>
         {% endif %}
-    </div>
-</div>
-<div class="row-fluid">
-    <div class="col-lg-12">
+
+
         <div id="body-footer">  
             <p>
                 {%- if show_copyright %}
@@ -43,7 +39,7 @@
             {%- if show_sphinx %}
                 <p style="font-size: 13px;">
                     {% trans sphinx_version=sphinx_version|e %}
-                        Created using <a href="http://sphinx-doc.org/">Sphinx</a> ({{ sphinx_version }}) with <a href="https://github.com/saeiddrv/SphinxMinooTheme">Minoo</a> (Beta 0.9.4) theme.
+                        Created using <a href="http://sphinx-doc.org/">Sphinx</a> ({{ sphinx_version }}) with <a href="https://github.com/saeiddrv/SphinxMinooTheme">Minoo</a> (Beta 0.9.5) theme.
                     {% endtrans %}
                 </p>
             {%- endif %}
@@ -51,5 +47,4 @@
                 {%- block footer %} {% endblock %}
            </p>
         </div> 
-    </div>
-</div>
+
