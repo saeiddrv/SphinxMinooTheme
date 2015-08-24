@@ -9,9 +9,9 @@ https://github.com/saeiddrv/SphinxMinooTheme.
 class MinooVersion():
     major = "0"
     minor = "9"
-    micro = "5"
+    micro = "6"
     level = "Beta"
-    release = r"2015/05/21"
+    release = r"2015/08/24"
     def info(self):
         info = ".".join([self.major, self.minor, self.micro])
         return info

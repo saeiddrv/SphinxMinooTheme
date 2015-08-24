@@ -17,7 +17,9 @@ html{height:100%}
 a,ul>li>a,ol>li>a{text-decoration:none!important;color:#5C6BC0;padding:0}
 a:hover,ul>li>a:hover,ol>li>a:hover{color:#66BB6A}
 i{vertical-align:middle}
-h1,h2,h3,h4,h5,h6{font-weight:bold;color:#000000}
+h1,h2,h3,h4,h5,h6{font-weight:bold;color:#000000;display:inline-block}
+h1,h2{padding:10px 0 10px 15px}
+h1{background-color:#5C6BC0;color:#FFFFFF;line-height:26px;border-left:5px #E8EAF6 solid}
 p{line-height:24px;margin:0;font-size:16px}
 h1{font-size:175%}
 h2{font-size:150%}
@@ -31,11 +33,11 @@ th{text-align:left}
 td,th{vertical-align:top}
 thead{background-color:#5C6BC0;color:#FFFFFF}
 caption{text-align:center;color:#212121;padding:8px 24px;background-color:#E8EAF6}
-code,kbd,pre,samp{font-family:monospace;background-color:#E8EAF6;border-radius:0;border:none;direction:ltr;font-size:12px}
+code,kbd,pre,samp{background-color:#E8EAF6;border-radius:0;border:none;direction:ltr;font-size:12px}
 code,kbd,samp{padding:2px 6px;white-space:pre}
 pre{margin:0;overflow-wrap:normal}
-ul,ol{padding-left:24px}
-ul li{list-style:disc;margin-top:1px}
+ul,ol{padding-left:24px;font-size:16px}
+ul li{list-style:disc;margin-top:1px;font-size:16px}
 dl dt{font-weight:bold}
 dl dd{margin:0 0 12px 24px}
 
@@ -113,7 +115,8 @@ div[class^='highlight']{overflow-x:auto;direction:ltr}
 div[class^='highlight'] td.code{width:100%}
 div[class^='highlight-'] .highlight,div[class^='last highlight-'] .highlight{margin-bottom:0}
 a.headerlink{visibility:hidden;content:none}
-h1:hover a.headerlink:before,h2:hover a.headerlink:before,h3:hover a.headerlink:before,caption:hover a.headerlink:before{visibility:visible;display:inline-block;content:"\f13d";font-size:13px;color:#66BB6A;margin-left:5px}
+h3:hover a.headerlink:before,caption:hover a.headerlink:before{font-family:FontAwesome;visibility:visible;display:inline-block;content:"\f13d";font-size:13px;color:#66BB6A;margin-left:5px;height:10px}
+h1:hover a.headerlink:before,h2:hover a.headerlink:before{font-family:FontAwesome;visibility:visible;display:inline-block;content:"\f13d";font-size:13px;color:#FFFFFF;margin-left:5px;height:10px}
 p.rubric{margin-bottom:12px;font-weight:bold}
 .container{padding-right:0;padding-left:0;margin:0 0 24px 0;width:100%}
 .linenodiv pre{border-left:0;background-color:#5C6BC0;color:#FFFFFF}
@@ -144,7 +147,8 @@ table.docutils.footnote{white-space:normal}
 #sidebar-bottom-list #tree-toc ul{padding:0;margin:0 0 0 24px}
 #sidebar-bottom-list #tree-toc ul li>a,#sidebar-bottom-list #tree-toc ul li.current>a{line-height:26px;border-left:0}
 #sidebar-bottom-list #tree-toc ul li>a{color:#212121;background-color:#E8EAF6}
-#sidebar-bottom-list #tree-toc ul li.current>a{color:#FFFFFF;background-color:#66BB6A}
+#sidebar-bottom-list #tree-toc ul li.current>a,h2{color:#FFFFFF;background-color:#66BB6A}
+h2{border-left:5px #E8EAF6 solid !important}
 #sidebar-bottom-list #tree-toc ul li>ul>li>a{color:#FFFFFF;background-color:#A5D6A7}
 #sidebar-bottom-list #tree-toc ul li>a:hover{border-left:5px #66BB6A solid;color:#212121}
 #sidebar-bottom-list #tree-toc ul li.current>a:hover{border-left:5px #E8EAF6 solid;color:#FFFFFF}
@@ -162,26 +166,26 @@ table.docutils.footnote{white-space:normal}
 .note .admonition-title:before,.tip .admonition-title:before,.hint .admonition-title:before,.attention .admonition-title:before,.important .admonition-title:before,.warning .admonition-title:before,.error .admonition-title:before,.danger .admonition-title:before,.caution .admonition-title:before,.admonition .admonition-title:before{margin-right:5px}
 .admonition.note,.admonition.attention{background-color:#90CAF9}
 .admonition.note .admonition-title,.admonition.attention .admonition-title{background-color:#42A5F5}
-.admonition.note .admonition-title:before{content:"\f12a"}
-.admonition.attention .admonition-title:before{content:"\f0e7"}
+.admonition.note .admonition-title:before{font-family:FontAwesome;content:"\f12a"}
+.admonition.attention .admonition-title:before{font-family:FontAwesome;content:"\f0e7"}
 .admonition.tip,.admonition.important{background-color:#80CBC4}
 .admonition.tip .admonition-title,.admonition.important .admonition-title{background-color:#26A69A}
-.admonition.tip .admonition-title:before{content:"\f0eb"}
-.admonition.important .admonition-title:before{content:"\f0a3"}
+.admonition.tip .admonition-title:before{font-family:FontAwesome;content:"\f0eb"}
+.admonition.important .admonition-title:before{font-family:FontAwesome;content:"\f0a3"}
 .admonition.hint,.admonition.warning{background-color:#FFAB91}
 .admonition.hint .admonition-title,.admonition.warning .admonition-title{background-color:#FF7043}
-.admonition.hint .admonition-title:before{content:"\f075"}
-.admonition.warning .admonition-title:before{content:"\f071"}
+.admonition.hint .admonition-title:before{font-family:FontAwesome;content:"\f075"}
+.admonition.warning .admonition-title:before{font-family:FontAwesome;content:"\f071"}
 .admonition.error,.admonition.danger{background-color:#EF9A9A}
 .admonition.error .admonition-title,.admonition.danger .admonition-title{background-color:#EF5350}
-.admonition.error .admonition-title:before{content:"\f05e"}
-.admonition.danger .admonition-title:before{content:"\f1e2"}
+.admonition.error .admonition-title:before{font-family:FontAwesome;content:"\f05e"}
+.admonition.danger .admonition-title:before{font-family:FontAwesome;content:"\f1e2"}
 .admonition.caution{background-color:#C5E1A5}
 .admonition.caution .admonition-title{background-color:#9CCC65}
-.admonition.caution .admonition-title:before{content:"\f06e"}
+.admonition.caution .admonition-title:before{font-family:FontAwesome;content:"\f06e"}
 .admonition{background-color:#B0BEC5}
 .admonition .admonition-title{background-color:#78909C}
-.admonition .admonition-title:before{content:"\f040"}
+.admonition .admonition-title:before{font-family:FontAwesome;content:"\f040"}
 img.align-left,.figure.align-left,object.align-left{clear:left;float:left;margin-right:1em}
 img.align-right,.figure.align-right,object.align-right{clear:right;float:right;margin-left:1em}
 img.align-center,.figure.align-center,object.align-center{display:block;margin-left:auto;margin-right:auto}
@@ -213,7 +217,8 @@ div[class^='highlight']{width:100%;display:inline-block}
 .table-responsive{border:1px solid #E8EAF6;border-top:none}
 .table{display:table;width:100%}}
 ::selection{background-color:#5C6BC0;color:#E8EAF6}
-
+td{font-size:14px}
+tr.row-even{background-color:#F5F5F5;}
 
 /* custome style */
 
