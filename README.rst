@@ -1,6 +1,11 @@
 Minoo
 ======
 
+.. image:: https://badge.fury.io/py/sphinx_minoo_theme.svg
+    :target: http://badge.fury.io/py/sphinx_minoo_theme
+    
+|
+
 .. contents::
 
 
