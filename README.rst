@@ -83,6 +83,7 @@ Customisation
     linkedin =
     twitter =
     github = https://github.com/saeiddrv/SphinxMinooTheme
+    gitlab =
     bitbucket =
 
   Whichever you don't want, left empty!
