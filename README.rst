@@ -1,6 +1,8 @@
 Minoo
 ======
 
+Minoo Theme is a `Sphinx <http://sphinx-doc.org/>`_ theme that supports right-to-left languages like `Persian <http://en.wikipedia.org/wiki/Persian_language>`_. It is available on PyPI and enables developers to create documentation websites with an elegant and functional design that works well with RTL languages.
+
 .. image:: https://badge.fury.io/py/sphinx_minoo_theme.svg
     :target: http://badge.fury.io/py/sphinx_minoo_theme
     
@@ -9,17 +11,15 @@ Minoo
 .. contents::
 
 
-`Minoo <https://github.com/saeiddrv/SphinxMinooTheme>`_ is a simple `Sphinx <http://sphinx-doc.org/>`_ theme with supports right-to-left languages such as `Persian <http://en.wikipedia.org/wiki/Persian_language>`_.
-
 
 Features
 ---------
 * Material Colors
-* RTL language
-* Responsive
-* Google Analytics id
-* Social Links and Avatar
-* Free
+* RTL language support
+* Responsive design
+* Google Analytics integration
+* Social links and avatar
+* Free to use
 
 
 Installation
@@ -28,11 +28,11 @@ Installation
 Via package
 ~~~~~~~~~~~~
 
-1. Installing from PyPI::
+You can install Minoo Theme from PyPI::
     
     $ pip install sphinx_minoo_theme
 
-2. Edit the Sphinx configuration file ``conf.py`` ::
+To use the theme in your Sphinx project, edit your Sphinx configuration file ``conf.py`` as follows::
     
     # At the top.
     import sphinx_minoo_theme
@@ -40,67 +40,62 @@ Via package
     # ...
     
     html_theme = "sphinx_minoo_theme"
-    
     html_theme_path = [sphinx_minoo_theme.get_html_theme_path()]
 
 
 Via git or download
 ~~~~~~~~~~~~~~~~~~~~
 
-1. Copy ``sphinx_minoo_theme/sphinx_minoo_theme`` from repository into your documentation at ``_templates`` folder.
-
-2. Edit the Sphinx configuration file ``conf.py`` ::
-    
-    # ...
+Alternatively, you can download the theme from the repository and ``copy sphinx_minoo_theme/sphinx_minoo_theme`` into your documentation at ``_templates`` folder. Then, add the following lines to your ``conf.py`` file::
     
     html_theme = "sphinx_minoo_theme"
-    
     html_theme_path = ["_templates"]
 
 
 Customisation
 --------------
 
-1. Put your avatar image file into ``static`` folder with ``avatar.jpg`` name.
+To customize the Minoo Theme, follow these steps:
 
-.. rubric:: Edit the theme configuration file ``theme.conf``
+1. Put your avatar image file into the ``static`` folder with the name ``avatar.jpg``.
 
-2. Change direction::
+2. Edit the theme configuration file ``theme.conf``: 
+
+* Change direction::
     
-    direction = ltr
+        direction = ltr
 
-  for "right-to-left" languages set on ``rtl``
+    For "right-to-left" languages, set it to ``rtl``
 
-3. Add your Google Analytics id::
+* Add your Google Analytics ID::
     
-    analytics_id = UA-XXXXX-X
+        analytics_id = UA-XXXXX-X
 
-4. Add your website address and social links::
+* Add your website address and social links::
     
-    website =
-    facebook =
-    googleplus =
-    linkedin =
-    twitter =
-    github = https://github.com/saeiddrv/SphinxMinooTheme
-    gitlab =
-    bitbucket =
+        website =
+        facebook =
+        googleplus =
+        linkedin =
+        twitter =
+        github = https://github.com/saeiddrv/SphinxMinooTheme
+        gitlab =
+        bitbucket =
 
-  Whichever you don't want, left empty!
+    Leave empty whichever you don't want.
 
-.. rubric:: Edit the ``glossary.html`` file
-
-5. In this way, you can change the theme words!
+3. Edit the ``glossary.html`` file to change the theme words.
 
 License
 --------
 
-`The MIT License (MIT) <https://github.com/saeiddrv/SphinxMinooTheme/blob/master/LICENSE>`_
+Minoo Theme is licensed under the MIT License. For more information, see the `LICENSE <https://github.com/saeiddrv/SphinxMinooTheme/blob/master/LICENSE>`_ file.
+
 
 Gratitude
 ----------
 
-`sphinx_rtd_theme <https://github.com/snide/sphinx_rtd_theme>`_ helped me build this theme.
+I would like to thank `sphinx_rtd_theme <https://github.com/snide/sphinx_rtd_theme>`_ for helping me build this theme.
 
 
 
