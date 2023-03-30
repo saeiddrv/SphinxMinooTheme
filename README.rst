@@ -46,7 +46,7 @@ To use the theme in your Sphinx project, edit your Sphinx configuration file ``c
 Via git or download
 ~~~~~~~~~~~~~~~~~~~~
 
-Alternatively, you can download the theme from the repository and ``copy sphinx_minoo_theme/sphinx_minoo_theme`` into your documentation at ``_templates`` folder. Then, add the following lines to your ``conf.py`` file::
+Alternatively, you can download the theme from the repository and copy ``sphinx_minoo_theme/sphinx_minoo_theme`` into your documentation at ``_templates`` folder. Then, add the following lines to your ``conf.py`` file::
     
     html_theme = "sphinx_minoo_theme"
     html_theme_path = ["_templates"]
