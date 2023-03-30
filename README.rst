@@ -61,28 +61,34 @@ To customize the Minoo Theme, follow these steps:
 
 2. Edit the theme configuration file ``theme.conf``: 
 
-* Change direction::
+* Change direction:
+
+  ..  code-block:: none
+  
+    direction = ltr
+
+  For "right-to-left" languages, set it to ``rtl``
+
+* Add your Google Analytics ID:
+
+  ..  code-block:: none
     
-        direction = ltr
+    analytics_id = UA-XXXXX-X
 
-    For "right-to-left" languages, set it to ``rtl``
+* Add your website address and social links:
 
-* Add your Google Analytics ID::
+  ..  code-block:: none
     
-        analytics_id = UA-XXXXX-X
+    website =
+    facebook =
+    googleplus =
+    linkedin =
+    twitter =
+    github = https://github.com/saeiddrv/SphinxMinooTheme
+    gitlab =
+    bitbucket =
 
-* Add your website address and social links::
-    
-        website =
-        facebook =
-        googleplus =
-        linkedin =
-        twitter =
-        github = https://github.com/saeiddrv/SphinxMinooTheme
-        gitlab =
-        bitbucket =
-
-    Leave empty whichever you don't want.
+  Leave empty whichever you don't want.
 
 3. Edit the ``glossary.html`` file to change the theme words.
 
