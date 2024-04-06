@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "sphinx_minoo_theme"
+version = "1.0" 
+description = "A simple Sphinx theme with RTL language support."
+authors = ["Saeid Darvishghazvini <inbox@saeiddrv.com>"]
+license = "MIT"
+homepage = "https://github.com/saeiddrv/SphinxMinooTheme"
+repository = "https://github.com/saeiddrv/SphinxMinooTheme"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
