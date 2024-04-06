@@ -8,7 +8,7 @@ https://github.com/saeiddrv/SphinxMinooTheme.
 class MinooVersion():
     major = "1"
     minor = "0"
-    micro = "0"
+    micro = "1"
     level = "Stable"
     release = r"2024/04/06"
 
