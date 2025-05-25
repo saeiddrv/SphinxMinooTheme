@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "sphinx_minoo_theme"
-version = "1.0.1"
+version = "1.1.0"
 description = "A simple Sphinx theme with RTL language support."
-authors = ["Saeid Darvishghazvini <inbox@saeiddrv.com>"]
+authors = ["Saeid Darvishghazvini <https://saeiddrv.com>"]
 license = "MIT"
 readme = "README.rst"
 homepage = "https://github.com/saeiddrv/SphinxMinooTheme"

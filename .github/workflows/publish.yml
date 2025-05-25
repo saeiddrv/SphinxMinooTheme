@@ -1,0 +1,36 @@
+name: Publish to PyPI
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish (e.g. v1.0.2)"
+        required: true
+        default: "v1.0.0"
+
+jobs:
+  publish:
+    name: Build and publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Configure Poetry
+        run: poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
+
+      - name: Install dependencies
+        run: poetry install --no-root
+
+      - name: Build and publish
+        run: poetry publish --build
